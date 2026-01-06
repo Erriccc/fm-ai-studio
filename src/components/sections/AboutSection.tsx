@@ -57,21 +57,20 @@ export function AboutSection() {
               About
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-steel-50 mb-6">
-              Built in the Midwest.{" "}
-              <span className="text-electric-500">Shipping Worldwide.</span>
+              Hey, I&apos;m Osborn.{" "}
+              <span className="text-electric-500">Let&apos;s build something.</span>
             </h2>
 
             <div className="space-y-4 text-steel-400 text-lg mb-8">
               <p>
-                I&apos;m Osborn Ojure, a full-stack developer based in Chicago&apos;s Fulton Market district. I work out of{" "}
-                <span className="text-steel-200">mHUB</span>, where hardware meets software in the city&apos;s most innovative neighborhood.
+                I&apos;m a developer who genuinely loves solving hard problems. Based in Chicago&apos;s Fulton Market—working out of{" "}
+                <span className="text-steel-200">mHUB</span>—I get to be surrounded by people building everything from robots to biotech. It keeps me sharp.
               </p>
               <p>
-                After winning{" "}
-                <span className="text-electric-500 font-medium">8 hackathons</span>, I realized something: the skills that win competitions—building fast, solving hard problems, shipping under pressure—are exactly what startups and enterprises need.
+                I&apos;ve won a few hackathons along the way (8 actually, but who&apos;s counting). More importantly, those late nights taught me how to ship under pressure—and that&apos;s the skill that actually matters when you&apos;re trying to launch something real.
               </p>
               <p>
-                No corporate bureaucracy. No offshore teams you can&apos;t reach. Just direct collaboration with someone who&apos;s been in the trenches and knows how to ship.
+                When you work with me, you get me. Not a junior dev, not someone overseas you can&apos;t reach. We&apos;ll talk through your problems together, and I&apos;ll build you something that works. Simple as that.
               </p>
             </div>
 

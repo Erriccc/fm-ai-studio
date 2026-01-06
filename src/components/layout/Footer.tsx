@@ -29,10 +29,14 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-xl font-bold text-steel-50">
-                FM<span className="text-electric-500">.</span>AI
+              <img
+                src="/logo.jpg"
+                alt="Fulton Market AI Studio"
+                className="w-10 h-10"
+              />
+              <span className="text-lg font-bold text-steel-50">
+                FMAI<span className="text-electric-500"> Studio</span>
               </span>
-              <span className="text-sm text-steel-500 font-medium">Studio</span>
             </div>
             <p className="text-steel-400 text-sm max-w-sm mb-6">
               Fulton Market AI Studio. Building production-ready software for startups and enterprises from Chicago&apos;s innovation district.

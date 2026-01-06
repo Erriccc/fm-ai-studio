@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Navy (Deep Blue) */
+  /* Navy (Deep Blue) - matches logo outer ring */
   --navy-50: #f0f4ff;
   --navy-100: #e0e9ff;
   --navy-500: #1e3a5f;
@@ -10,12 +10,12 @@
   --navy-800: #0a1628;
   --navy-900: #050b14;
 
-  /* Electric Green */
-  --electric-50: #f0fff4;
-  --electric-100: #dcffe4;
-  --electric-400: #00ff88;
-  --electric-500: #00e676;
-  --electric-600: #00c853;
+  /* Teal/Cyan - matches logo accent color */
+  --electric-50: #f0fdfa;
+  --electric-100: #ccfbf1;
+  --electric-400: #2dd4bf;
+  --electric-500: #14b8a6;
+  --electric-600: #0d9488;
 
   /* Steel (Neutrals) */
   --steel-50: #fafafa;
@@ -37,7 +37,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
-  --font-mono: var(--font-jetbrains-mono);
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
   /* Custom colors */
   --color-navy-50: var(--navy-50);

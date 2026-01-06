@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Menu, X } from "lucide-react";
@@ -21,11 +22,15 @@ export function Header() {
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-bold text-steel-50">
-              FM<span className="text-electric-500">.</span>AI
-            </span>
-            <span className="hidden sm:inline text-sm text-steel-500 font-medium">
-              Studio
+            <Image
+              src="/logo.jpg"
+              alt="Fulton Market AI Studio"
+              width={40}
+              height={40}
+              className="w-10 h-10"
+            />
+            <span className="hidden sm:inline text-lg font-bold text-steel-50">
+              FMAI<span className="text-electric-500"> Studio</span>
             </span>
           </Link>
 
