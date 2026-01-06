@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Navy (Deep Blue) */
+  --navy-50: #f0f4ff;
+  --navy-100: #e0e9ff;
+  --navy-500: #1e3a5f;
+  --navy-600: #162d4d;
+  --navy-700: #0f1f33;
+  --navy-800: #0a1628;
+  --navy-900: #050b14;
+
+  /* Electric Green */
+  --electric-50: #f0fff4;
+  --electric-100: #dcffe4;
+  --electric-400: #00ff88;
+  --electric-500: #00e676;
+  --electric-600: #00c853;
+
+  /* Steel (Neutrals) */
+  --steel-50: #fafafa;
+  --steel-100: #f4f4f5;
+  --steel-200: #e4e4e7;
+  --steel-300: #d4d4d8;
+  --steel-400: #a1a1aa;
+  --steel-500: #71717a;
+  --steel-600: #52525b;
+  --steel-700: #3f3f46;
+  --steel-800: #27272a;
+  --steel-900: #18181b;
+
+  --background: var(--navy-900);
+  --foreground: var(--steel-100);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Custom colors */
+  --color-navy-50: var(--navy-50);
+  --color-navy-100: var(--navy-100);
+  --color-navy-500: var(--navy-500);
+  --color-navy-600: var(--navy-600);
+  --color-navy-700: var(--navy-700);
+  --color-navy-800: var(--navy-800);
+  --color-navy-900: var(--navy-900);
+
+  --color-electric-50: var(--electric-50);
+  --color-electric-100: var(--electric-100);
+  --color-electric-400: var(--electric-400);
+  --color-electric-500: var(--electric-500);
+  --color-electric-600: var(--electric-600);
+
+  --color-steel-50: var(--steel-50);
+  --color-steel-100: var(--steel-100);
+  --color-steel-200: var(--steel-200);
+  --color-steel-300: var(--steel-300);
+  --color-steel-400: var(--steel-400);
+  --color-steel-500: var(--steel-500);
+  --color-steel-600: var(--steel-600);
+  --color-steel-700: var(--steel-700);
+  --color-steel-800: var(--steel-800);
+  --color-steel-900: var(--steel-900);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: var(--electric-500);
+  color: var(--navy-900);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--navy-800);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy-600);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy-500);
 }
